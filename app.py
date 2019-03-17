@@ -8,9 +8,9 @@ app = Flask(__name__)
 def main():
     return "Hello world"
 
-@app.route("/time", methods=["GET"])
+@app.route("/health", methods=["GET"])
 def time():
-    return str(datetime.now())
+    return "ok"
 
 
 app.run(host='0.0.0.0', port=PORT, debug=True)
