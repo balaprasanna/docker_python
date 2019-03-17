@@ -1,7 +1,7 @@
 from flask import Flask #external package
 from datetime import datetime #sys lib
 
-PORT = 8022
+PORT = 3000
 app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
